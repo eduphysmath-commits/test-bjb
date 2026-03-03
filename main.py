@@ -101,7 +101,7 @@ else:
 
             # --- ЖАҢА БӨЛІК: СУРЕТ ЖҮКТЕУ ---
             st.markdown("<div class='upload-box'><b>📸 Жұмыстың суреті (Міндетті түрде):</b><br>Есептерді дәптерге шығарған болсаңыз, анық етіп суретке түсіріп, осында жүктеңіз.</div>", unsafe_allow_html=True)
-            uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"])
+            uploaded_image = st.camera_input("📸 Дәптердегі есепті сайттың ішінен тікелей суретке түсіріңіз")
 
             if st.form_submit_button("ЖҰМЫСТЫ ТАПСЫРУ ✅"):
                 if not name or len(name) < 3:
